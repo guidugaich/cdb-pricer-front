@@ -16,6 +16,7 @@ function App() {
   const [currentDate, setCurrentDate] = useState('');
   const [cdbRate, setCdbRate] = useState(0);
   const [userMsg, setUserMsg] = useState('Preencha os dados no formulário.')
+  const [loading, setLoading] = useState(false)
 
   const context = {
     investmentDate,
@@ -25,11 +26,13 @@ function App() {
     cdbRate,
     setCdbRate,
     userMsg,
-    data
+    data,
+    loading
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true)
 
     const response = await fetch(`${BASE_URL}?investmentDate=${investmentDate}&currentDate=${currentDate}&cdbRate=${cdbRate}`);
   
@@ -41,6 +44,8 @@ function App() {
       setData([])
       setUserMsg('Dados não disponíveis. Preencha o formulário novamente.')
     }
+
+    setLoading(false)
   }
 
   return (

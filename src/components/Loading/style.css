@@ -1,0 +1,49 @@
+/* https://dev.to/stackfindover/how-to-create-a-dot-loading-animation-hc7 */
+.loader-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.loader>span {
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 5px;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot-1 {
+  animation: anim 1s linear 0s infinite;
+}
+
+.dot-2 {
+  animation: anim 1s linear 0.25s infinite;
+}
+
+.dot-3 {
+  animation: anim 1s linear 0.50s infinite;
+}
+
+@keyframes anim {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 15px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
