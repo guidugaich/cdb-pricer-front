@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import Context from '../../context'
 
-export default function index() {
+import Chart from './Chart'
+import DataTable from './DataTable'
+
+import './style.css'
+
+export default function Data() {
+  const { data, userMsg } = useContext(Context)
+
   return (
-    <div>
-      Tabela
-      Grafico
-    </div>
+    <>
+      {!data.length ? <h2>{userMsg}</h2> : (
+        <div className='dataContainer'>
+          <DataTable />
+          <Chart />
+        </div>
+      )}
+    </>
   )
 }
