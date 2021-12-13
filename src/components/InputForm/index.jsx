@@ -4,7 +4,7 @@ import Context from '../../context';
 import './style.css'
 
 export default function InputForm({ handleSubmit }) {
-  const { setInvestmentDate, setCurrentDate, setCdbRate, setData } = useContext(Context)
+  const { setInvestmentDate, setCurrentDate, setCdbRate } = useContext(Context)
 
   return (
     <form onSubmit={handleSubmit}>

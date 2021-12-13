@@ -8,10 +8,10 @@ export default function index() {
       <h1>Precificador de CDB</h1>
       <div className='infoContainer'>
         <span>
-          Desenvolvido por <a href='https://github.com/guidugaich' target="_blank">guidugaich</a>
+          Desenvolvido por <a rel="noreferrer" href='https://github.com/guidugaich' target="_blank">guidugaich</a>
         </span>
         <span>
-          <a href='https://github.com/guidugaich/cdb-pricer' target="_blank">sobre o projeto</a>
+          <a rel="noreferrer" href='https://github.com/guidugaich/cdb-pricer' target="_blank">sobre o projeto</a>
         </span>
       </div>
     </div>

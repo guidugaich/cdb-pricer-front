@@ -16,8 +16,8 @@ export default function DataTable() {
       </thead>
       <tbody>
         {!data ? <div>Dados indisponíveis</div> : (
-          data.map(d => (
-            <tr>
+          data.map((d, index) => (
+            <tr key={index}>
               <td>{d.date}</td>
               <td>{d.unitPrice}</td>
             </tr>
