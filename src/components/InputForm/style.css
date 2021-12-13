@@ -1,0 +1,27 @@
+form {
+  width: 80vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+input, label {
+  padding: 8px;
+  display: block;
+}
+
+button {
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 900;
+  font-size: large;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px;
+}
