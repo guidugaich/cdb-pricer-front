@@ -1,0 +1,23 @@
+.titleContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.infoContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  font-size: 14px;
+  font-weight: 300;
+  flex-wrap: wrap;
+}
+
+.infoContainer span {
+  margin: 0 20px;
+}
